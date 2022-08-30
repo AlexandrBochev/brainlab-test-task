@@ -1,0 +1,38 @@
+/* ------------------------------------------------------------------------------------------------- */
+/* Header Style Start */
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 36px 30px;
+}
+
+.header_body {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header_list {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  list-style: none;
+}
+
+.header_item {
+  position: relative;
+  margin-left: 50px;
+}
+
+.header_link {
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-size: 18px;
+  line-height: 21px;
+  color: #000;
+}
