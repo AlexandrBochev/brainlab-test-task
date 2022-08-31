@@ -2,7 +2,6 @@
 /* Header Style Start */
 
 .header {
-  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -27,6 +26,10 @@
 .header_item {
   position: relative;
   margin-left: 50px;
+}
+
+.header_item:first-child {
+  margin-left: 15px;
 }
 
 .header_link {
@@ -60,6 +63,10 @@
   transition: .1s linear;
 }
 
+.header_subitem {
+  margin-top: 10px;
+}
+
 .header_sublink {
   text-decoration: none;
   font-family: 'Open Sans';
@@ -74,15 +81,136 @@
   color: #E00034;
 }
 
-.header_item:hover .headet_sublist  {
+.header_sublink:hover, .header_sublink:active, .header_sublink:focus {
+  color: #E00034;
+}
+
+.header_item:hover .headet_sublist {
   transform: translateY(0);
   opacity: 1;
 }
 
-.header_item:hover .menu_arrow  {
+.header_item:active .menu_arrow {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.header_item:hover .menu_arrow {
+  transform: rotate(-180deg);
+  border-top: 5px solid #E00034;
+}
+
+.header_item:active .menu_arrow  {
   transform: rotate(-180deg);
   border-top: 5px solid #E00034;
 }
 
 /* Header Style End */
 /* ------------------------------------------------------------------------------------------------- */
+/* Industries Style Start */
+
+.industries {
+  margin: 60px 0;
+}
+
+.industries_title {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+}
+
+.industries_title_line {
+  width: 90px;
+  height: 2px;
+  margin: 10px auto 60px;
+  background: #E00034;
+}
+
+.industries_content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  background: #E5E5E5;
+}
+
+.industries_list {
+  list-style: none;
+  z-index: 10;
+}
+
+.industries_item {
+  position: relative;
+  min-width: 440px;
+  height: 80px;
+  cursor: pointer;
+  background: linear-gradient(90.06deg, #FFFFFF 70.83%, rgba(255, 255, 255, 0.25) 99.97%);
+  
+}
+
+.industries_link {
+  position: absolute;
+  left: 55px;
+  top: 22px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #969798;
+}
+
+.industries_item_line {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background: #E5E5E5;
+}
+
+.industries_article {
+  height: 716px;
+  padding: 60px 130px 60px 85px;
+  background: #FFFFFF;
+}
+
+.industries_article_title {
+  font-weight: 500;
+  font-size: 48px;
+  color: #E00034;
+  margin-bottom: 50px;
+}
+
+.industries_arrow {
+  margin: 60px 0;
+}
+
+.industries_images {
+  position: relative;
+  height: 720px;
+}
+
+.industries_images::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.industries_img {
+  max-width: 340px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.industries_item:hover .industries_link {
+  color: #E00034;
+}
+
+/* Industries Style End */
+/* ------------------------------------------------------------------------------------------------- */
+/*  */
