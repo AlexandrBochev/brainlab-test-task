@@ -130,49 +130,44 @@
 .industries_content {
   position: relative;
   display: flex;
-  align-items: center;
   width: 100%;
+  height: 728px;
   background: #E5E5E5;
 }
 
 .industries_list {
   list-style: none;
-  z-index: 10;
 }
 
 .industries_item {
-  position: relative;
-  min-width: 440px;
-  height: 80px;
-  cursor: pointer;
-  background: linear-gradient(90.06deg, #FFFFFF 70.83%, rgba(255, 255, 255, 0.25) 99.97%);
-  
+  display: flex;
+  margin-bottom: 1px;
 }
 
 .industries_link {
-  position: absolute;
-  left: 55px;
-  top: 22px;
+  min-width: 440px;
+  height: 80px;
+  background: linear-gradient(90.06deg, #FFFFFF 70.83%, rgba(255, 255, 255, 0.25) 99.97%);
   text-decoration: none;
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #969798;
+  padding: 22px 0 0 55px;
 }
 
-.industries_item_line {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 1px;
-  background: #E5E5E5;
+.industrie_block {
+  opacity: 0;
+  visibility: hidden;
+  display: flex;
+  transition: all 0.2s ease 0s;
 }
 
 .industries_article {
-  height: 716px;
+  height: 726px;
   padding: 60px 130px 60px 85px;
   background: #FFFFFF;
+  margin: 1px 0;
 }
 
 .industries_article_title {
@@ -207,7 +202,12 @@
   object-fit: cover;
 }
 
-.industries_item:hover .industries_link {
+.industries_link:hover {
+  color: #E00034;
+}
+
+.industries_link:active, .industries_link:focus {
+  background: #fff;
   color: #E00034;
 }
 
