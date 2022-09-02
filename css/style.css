@@ -132,10 +132,12 @@
   width: 100%;
   height: 728px;
   background: #E5E5E5;
+  z-index: 10;
 }
 
 .industries_list {
   list-style: none;
+  z-index: 10;
 }
 
 .industries_item {
@@ -157,6 +159,7 @@
 
 .industries_blocks {
   position: relative;
+  z-index: 10;
 }
 
 .industrie_block {
@@ -179,8 +182,9 @@
 .industries_article_title {
   font-weight: 500;
   font-size: 48px;
+  line-height: 58px;
   color: #E00034;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .industries_arrow {
@@ -218,5 +222,182 @@
 }
 
 /* Industries Style End */
+/* ------------------------------------------------------------------------------------------------- */
+/* Slider Style Start */
+
+.slider {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides {
+  width: 900%;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 365px%;
+  transition: 2s;
+}
+
+.slide_block {
+  position: relative;
+  width: 365px;
+  height: 470px;
+}
+
+.slide_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.slide_filter {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.slide_title_news {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 110px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 22px;
+  background: #E00034;
+  color: #fff;
+  padding: 8px 10px;
+}
+
+.slide_title_webinar {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 110px;
+  height: 40px;
+  font-size: 18px;
+  line-height: 22px;
+  background: #2DB3FF;
+  color: #fff;
+  padding: 8px 10px;
+}
+
+.slide_date {
+  position: absolute;
+  left: 10px;
+  bottom: 300px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.slide_line1 {
+  position: absolute;
+  left: 0;
+  bottom: 290px;
+  width: 140px;
+  height: 2px;
+  background: #E00034;
+}
+
+.slide_line2 {
+  position: absolute;
+  left: 0;
+  bottom: 290px;
+  width: 140px;
+  height: 2px;
+  background: #2DB3FF;
+}
+
+.slide_text {
+  position: absolute;
+  left: 50%;
+  bottom: 180px;
+  transform: translateX(-50%);
+  width: 260px;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.slide_arr {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 60px;
+}
+
+.navigation_manual {
+  position: absolute;
+  margin-top: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual_btn {
+  border: 2px solid #E00034;
+  padding: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: .5s;
+}
+
+.manual_btn:not(:last-child) {
+  margin-right: 40px;
+}
+
+.manual_btn:hover {
+  background: #E00034;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -365px;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -730px;
+}
+
+#radio4:checked ~ .first {
+  margin-left: 0;
+}
+
+/* #radio5:checked ~ .first {
+  margin-left: -1460px;
+}
+
+#radio6:checked ~ .first {
+  margin-left: -1825px;
+}
+
+#radio7:checked ~ .first {
+  margin-left: -2190px;
+}
+
+#radio8:checked ~ .first {
+  margin-left: -2555px;
+} */
+
+/* Slider Style End */
 /* ------------------------------------------------------------------------------------------------- */
 /*  */
