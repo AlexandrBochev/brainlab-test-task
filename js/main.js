@@ -51,6 +51,13 @@ $(document).ready(function(){
     asNavFor: '.slider',
   });
 
+  $('.task-two__dynamic').slick({
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 1000,
+    vertical: true,
+  });
+
 });
 
 // Popup
